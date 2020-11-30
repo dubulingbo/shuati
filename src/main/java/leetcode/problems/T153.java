@@ -12,7 +12,7 @@ public class T153 {
     public int findMin(int[] nums) {
         int left = 0, right = nums.length - 1;
 
-        if(nums[left] <= nums[right])return nums[left];
+        if(nums[left] <= nums[right]) return nums[left];
 
         while (left <= right) {
             int mid = left + (right - left) / 2;

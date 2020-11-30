@@ -10,7 +10,7 @@
 
 #### 1. 每日五题
 
-| 题目链接                                                     | 题目名称                                    | 难度 | 方法                                                         | 完成日期   | 备注      |
+| 题目链接                                                     | 题目名称                                    | 难度 | 解题思路                                                     | 完成日期   | 备注      |
 | :----------------------------------------------------------- | ------------------------------------------- | ---- | ------------------------------------------------------------ | ---------- | --------- |
 | #101                                                         | 对称二叉树                                  | S    |                                                              |            |           |
 | #104                                                         | 二叉树的最大深度                            | S    |                                                              |            |           |
@@ -48,7 +48,6 @@
 | #806                                                         | 写字符串需要的行数                          | S    |                                                              |            |           |
 | #844                                                         | 比较含退格的字符串                          | S    |                                                              |            |           |
 | #922                                                         | 按奇偶排序数组II                            | S    |                                                              |            |           |
-| #976                                                         | 三角形的最大周长                            | S    |                                                              |            |           |
 | #999                                                         | 可以被一步捕获的棋子数                      | S    |                                                              |            |           |
 | #1160                                                        | 拼写单词                                    | S    |                                                              |            |           |
 | #1207                                                        | 独一无二的出现次数                          | S    |                                                              |            |           |
@@ -92,6 +91,7 @@
 | [#31](https://leetcode-cn.com/problems/next-permutation)     | 下一个排列                                  | M    | 数组遍历 + 排序                                              | 2020/11/10 | **Daily** |
 | [#514](https://leetcode-cn.com/problems/freedom-trail)       | 自由之路                                    | H    | 动态规划 + 利用Hash表 优化                                   | 2020/11/11 | **Daily** |
 | [#922](https://leetcode-cn.com/problems/sort-array-by-parity-ii) | 按奇偶排序数组II                            | S    | 奇偶双指针（快排变体）+ 数组遍历                             | 2020/11/12 | **Daily** |
+| [#153](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | 寻找旋转排序数组中的最小值                  | M    | 二分法（分治）                                               | 2020/11/12 | problems  |
 | [#328](https://leetcode-cn.com/problems/odd-even-linked-list) | 奇偶链表                                    | M    | 奇偶双指针  + 链表遍历                                       | 2020/11/13 | **Daily** |
 | [#1122](https://leetcode-cn.com/problems/relative-sort-array) | 数组的相对排序                              | S    | 计数排序（桶排序）                                           | 2020/11/14 | **Daily** |
 | [#599](https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/) | 两个列表的最小索引总和                      | S    | HashMap                                                      | 2020/11/14 | problems  |
@@ -195,14 +195,55 @@
 | [#1389](https://leetcode-cn.com/problems/create-target-array-in-the-given-order/) | 按既定顺序创建目标数组                      | S    | 模拟                                                         | 2020/11/25 | problems  |
 | [#1399](https://leetcode-cn.com/problems/count-largest-group/) | 统计最大组的数目                            | S    | 模拟                                                         | 2020/11/25 | problems  |
 | [#287](https://leetcode-cn.com/problems/find-the-duplicate-number/) | 寻找重复数                                  | M    | 1. hash set<br/>2. sort + 一次查找                           | 2020/11/25 | problems  |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
-|                                                              |                                             |      |                                                              |            |           |
+| [#164](https://leetcode-cn.com/problems/maximum-gap/)        | 最大间距                                    | H    | 排序 + 一次遍历                                              | 2020/11/26 | **Daily** |
+| [#151](https://leetcode-cn.com/problems/reverse-words-in-a-string/) | 翻转字符串里的单词                          | M    | 模拟（字符串遍历）                                           | 2020/11/26 | problems  |
+| [#152](https://leetcode-cn.com/problems/maximum-product-subarray/) | 乘积最大子数组                              | M    | 动态规划                                                     | 2020/11/26 | problems  |
+| [#200](https://leetcode-cn.com/problems/number-of-islands/)  | 岛屿数量                                    | M    | dfs / bfs / ==并查集（未实现）==                             | 2020/11/26 | problems  |
+| [#187](https://leetcode-cn.com/problems/repeated-dna-sequences/) | 重复的DNA序列                               | M    | 滑动窗口 + 枚举                                              | 2020/11/26 | problems  |
+| [#289](https://leetcode-cn.com/problems/game-of-life/)       | 生命游戏                                    | M    | 矩阵遍历（原地修改，引入状态值）                             | 2020/11/26 | problems  |
+| [#299](https://leetcode-cn.com/problems/bulls-and-cows/)     | 猜数字游戏                                  | M    | Hash 计数                                                    | 2020/11/26 | problems  |
+| [#165](https://leetcode-cn.com/problems/compare-version-numbers/) | 比较版本号                                  | M    | 模拟                                                         | 2020/11/26 | problems  |
+| [#454](https://leetcode-cn.com/problems/4sum-ii/)            | 四数相加 II                                 | M    | 1. 排序 + 暴力枚举（a，b，c）<br/>2. 分组 + HashMap          | 2020/11/27 | **Daily** |
+| [#150](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) | 逆波兰表达式求值                            | M    | 1. 辅助栈<br/>2. 数组模拟栈                                  | 2020/11/27 | problems  |
+| [#154](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/) | 寻找旋转排序数组中的最小值 II               | H    | 二分法                                                       | 2020/11/27 | problems  |
+| [#989](https://leetcode-cn.com/problems/add-to-array-form-of-integer/) | 数组形式的整数加法                          | S    |                                                              | 2020/11/27 | problems  |
+| [#970](https://leetcode-cn.com/problems/powerful-integers/)  | 强整数                                      | S    | 枚举                                                         | 2020/11/27 | problems  |
+| [#1002](https://leetcode-cn.com/problems/find-common-characters/) | 查找常用字符                                | S    | 双 Hash 表                                                   | 2020/11/27 | problems  |
+| [ #493](https://leetcode-cn.com/problems/reverse-pairs/)     | 翻转对                                      | H    | 归并排序的变体                                               | 2020/11/28 | **Daily** |
+| [#162](https://leetcode-cn.com/problems/find-peak-element/)  | 寻找峰值                                    | M    | 二分法 / 枚举                                                | 2020/11/28 | problems  |
+| [#166](https://leetcode-cn.com/problems/fraction-to-recurring-decimal/) | 分数到小数                                  | M    | 模拟分数除法                                                 | 2020/11/28 | problems  |
+| [#953](https://leetcode-cn.com/problems/verifying-an-alien-dictionary/) | 验证外星语词典                              | S    |                                                              | 2020/11/28 | problems  |
+| [ #961](https://leetcode-cn.com/problems/n-repeated-element-in-size-2n-array/) | 重复 N 次的元素                             | S    | HashSet                                                      | 2020/11/28 | problems  |
+| [#977](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | 有序数组的平方                              | S    | 分区 + 合并两个有序数组                                      | 2020/11/28 | problems  |
+| [#985](https://leetcode-cn.com/problems/sum-of-even-numbers-after-queries/) | 查询后的偶数和                              | S    | 模拟                                                         | 2020/11/28 | problems  |
+| [#997](https://leetcode-cn.com/problems/find-the-town-judge/) | 找到小镇的法官                              | S    | 双数组统计                                                   | 2020/11/28 | problems  |
+| [#976](https://leetcode-cn.com/problems/largest-perimeter-triangle/) | 三角形的最大周长                            | S    | 排序 + 数学原理                                              | 2020/11/29 | **Daily** |
+| [#441](https://leetcode-cn.com/problems/arranging-coins/)    | 排列硬币                                    | S    | 数学解方程  /  二分法                                        | 2020/11/29 | problems  |
+| [#434](https://leetcode-cn.com/problems/number-of-segments-in-a-string/) | 字符串中的单词数                            | S    | 字符串遍历 + 前指针                                          | 2020/11/29 | problems  |
+| [ #409](https://leetcode-cn.com/problems/longest-palindrome/) | 最长回文串                                  | S    | Hash 计数                                                    | 2020/11/29 | problems  |
+| [#415](https://leetcode-cn.com/problems/add-strings/)        | 字符串相加                                  | S    | 模拟加法（字符串）                                           | 2020/11/29 | problems  |
+| [ #448](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/) | 找到所有数组中消失的数字                    | S    | HashSet                                                      | 2020/11/29 | problems  |
+| [#1394](https://leetcode-cn.com/problems/find-lucky-integer-in-an-array/) | 找出数组中的幸运数                          | S    | Hash 计数                                                    | 2020/11/29 | problems  |
+| [#5558](https://leetcode-cn.com/problems/merge-in-between-linked-lists/) | 合并两个链表                                | M    | 链表遍历 + 前指针（模拟）                                    | 2020/11/29 | problems  |
+| [#986](https://leetcode-cn.com/problems/interval-list-intersections/) | 区间列表的交集                              | M    | 区间取交集（区间处理）                                       | 2020/11/29 | problems  |
+| [#1403](https://leetcode-cn.com/problems/minimum-subsequence-in-non-increasing-order/) | 非递增顺序的最小子序列                      | S    | 排序 + 前后缀和                                              | 2020/11/29 | problems  |
+| [#393](https://leetcode-cn.com/problems/utf-8-validation/)   | UTF-8 编码验证                              | M    | 模拟 + 位运算                                                | 2020/11/29 | problems  |
+| [#767](https://leetcode-cn.com/problems/reorganize-string/)  | 重构字符串                                  |      | 按关键字排序 + 贪心                                          | 2020/11/30 | **Daily** |
+| [#859](https://leetcode-cn.com/problems/buddy-strings/)      | 亲密字符串                                  |      | 模拟（字符串问题）                                           | 2020/11/30 | problems  |
+| [#1071](https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/) | 字符串的最大公因子                          | S    | 模拟                                                         | 2020/11/30 | problems  |
+| [ #605](https://leetcode-cn.com/problems/can-place-flowers/) | 种花问题                                    | S    | 归纳总结                                                     | 2020/11/30 | problems  |
+| [#628](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/) | 三个数的最大乘积                            | S    | 最大值、最小值、次大值、次小值                               | 2020/11/30 | problems  |
+| [ #643](https://leetcode-cn.com/problems/maximum-average-subarray-i/) | 子数组最大平均数 I                          | S    | 枚举+ 前缀和（类滑动窗口）                                   | 2020/11/30 | problems  |
+| [#728](https://leetcode-cn.com/problems/self-dividing-numbers/) | 自除数                                      | S    | 暴力（直接）法                                               | 2020/11/30 | problems  |
+| [#720](https://leetcode-cn.com/problems/longest-word-in-dictionary/) | 词典中最长的单词                            | S    | BFS                                                          | 2020/11/30 | problems  |
+| [ #724](https://leetcode-cn.com/problems/find-pivot-index/)  | 寻找数组的中心索引                          | S    | 前缀和 + 后缀和                                              | 2020/11/30 | problems  |
+| [ #717](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/) | 1比特与2比特字符                            | S    | 循环                                                         | 2020/11/30 | problems  |
+| [ #733](https://leetcode-cn.com/problems/flood-fill/)        | 图像渲染                                    | S    | DFS                                                          | 2020/11/30 | problems  |
+| [ #709](https://leetcode-cn.com/problems/to-lower-case/)     | 转换成小写字母                              | S    | 循环                                                         | 2020/11/30 | problems  |
+|                                                              |                                             |      |                                                              | 2020/12/01 | **Daily** |
+|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
+|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
+|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
 
 
 

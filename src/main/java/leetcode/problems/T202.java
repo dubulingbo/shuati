@@ -1,5 +1,6 @@
 package leetcode.problems;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,7 @@ public class T202 {
             hash.add(n);
             n = getNext(n);
         }
+
         return n == 1;
     }
 

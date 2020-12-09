@@ -1,7 +1,8 @@
 ## 一、LeetCode刷题笔记
 
-```
+```java
 参考网站: https://leetcode-cn.com/problemset/all/
+leetcode 个人中心：https://leetcode-cn.com/u/habitplus
 编程语言: Java
 开始时间: 2020/10/19
 版本号: V1.0
@@ -240,10 +241,94 @@
 | [ #717](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/) | 1比特与2比特字符                            | S    | 循环                                                         | 2020/11/30 | problems  |
 | [ #733](https://leetcode-cn.com/problems/flood-fill/)        | 图像渲染                                    | S    | DFS                                                          | 2020/11/30 | problems  |
 | [ #709](https://leetcode-cn.com/problems/to-lower-case/)     | 转换成小写字母                              | S    | 循环                                                         | 2020/11/30 | problems  |
-|                                                              |                                             |      |                                                              | 2020/12/01 | **Daily** |
-|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
-|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
-|                                                              |                                             |      |                                                              | 2020/12/01 | problems  |
+| [#34](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 在排序数组中查找元素的第一个和最后一个位置  | M    | 二分法                                                       | 2020/12/01 | **Daily** |
+| [#1089](https://leetcode-cn.com/problems/duplicate-zeros/)   | 复写零                                      | S    |                                                              | 2020/12/01 | problems  |
+| [#LCP 06](https://leetcode-cn.com/problems/na-ying-bi/)      | 拿硬币                                      | S    |                                                              | 2020/12/01 | problems  |
+| [#LCP 01](https://leetcode-cn.com/problems/guess-numbers/)   | 猜数字                                      | S    |                                                              | 2020/12/01 | problems  |
+| [#LCP 07](https://leetcode-cn.com/problems/chuan-di-xin-xi/) | 传递信息                                    | S    |                                                              | 2020/12/01 | problems  |
+| [#LCP 18](https://leetcode-cn.com/problems/2vYnGI/)          | 早餐组合                                    | S    |                                                              | 2020/12/01 | problems  |
+| [#541](https://leetcode-cn.com/problems/reverse-string-ii/)  | 反转字符串 II                               | S    |                                                              | 2020/12/01 | problems  |
+| [#557](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) | 反转字符串中的单词 III                      | S    |                                                              | 2020/12/01 | problems  |
+| [ #543](https://leetcode-cn.com/problems/diameter-of-binary-tree/) | 二叉树的直径                                | S    |                                                              | 2020/12/01 | problems  |
+| [#500](https://leetcode-cn.com/problems/keyboard-row/)       | 键盘行                                      | S    |                                                              |            |           |
+| [#1290](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/) | 二进制链表转整数                            | S    |                                                              | 2020/12/01 | problems  |
+| [#1281](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/) | 整数的各位积和之差                          | S    |                                                              | 2020/12/01 | problems  |
+| [#1287](https://leetcode-cn.com/problems/element-appearing-more-than-25-in-sorted-array/) | 有序数组中出现次数超过25%                   | S    |                                                              | 2020/12/01 | problems  |
+| [#1295](https://leetcode-cn.com/problems/find-numbers-with-even-number-of-digits/) | 统计位数为偶数的数字                        | S    |                                                              | 2020/12/01 | problems  |
+| [#1299](https://leetcode-cn.com/problems/replace-elements-with-greatest-element-on-right-side/) | 将每个元素替换为右侧最大                    | S    |                                                              | 2020/12/01 | problems  |
+| [#1304](https://leetcode-cn.com/problems/find-n-unique-integers-sum-up-to-zero/) | 和为零的N个唯一整数                         | S    |                                                              | 2020/12/01 | problems  |
+| [#1309](https://leetcode-cn.com/problems/decrypt-string-from-alphabet-to-integer-mapping/) | 解码字母到整数映射                          | S    |                                                              | 2020/12/01 | problems  |
+| [#1313](https://leetcode-cn.com/problems/decompress-run-length-encoded-list/) | 解压缩编码列表                              | S    |                                                              | 2020/12/01 | problems  |
+| [#1317](https://leetcode-cn.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | 将整数转换为两个无零整数                    | S    |                                                              | 2020/12/01 | problems  |
+| [#1672](https://leetcode-cn.com/problems/richest-customer-wealth/) | 最富有客户的资产总量                        | S    |                                                              | 2020/12/01 | problems  |
+| [#321](https://leetcode-cn.com/problems/create-maximum-number/) | 拼接最大数                                  | H    |                                                              | 2020/12/02 | **Daily** |
+| [#1673](https://leetcode-cn.com/problems/find-the-most-competitive-subsequence/) | 找出最具竞争力的子序列                      | M    | 最长上升子序列（单调栈）<br/>求最小上升子序列，<br />维护一个单调栈，使得从栈底到栈顶递增，并且栈的容量控制在 k 个<br />数组模拟栈 | 2020/12/02 | problems  |
+| [#61 旋转链表](https://leetcode-cn.com/problems/rotate-list/) |                                             | M    |                                                              |            |           |
+| [ #43 字符串相乘](https://leetcode-cn.com/problems/multiply-strings/) |                                             | M    |                                                              | 2020/12/02 | problems  |
+| [#204](https://leetcode-cn.com/problems/count-primes/)       | 计数质数                                    | M    | 质数表（排除法）                                             | 2020/12/03 | **Daily** |
+| [#36](https://leetcode-cn.com/problems/valid-sudoku/)        | 有效的数独                                  | M    |                                                              | 2020/12/03 | problems  |
+| [#54](https://leetcode-cn.com/problems/spiral-matrix/)       | 螺旋矩阵                                    | M    |                                                              | 2020/12/03 | problems  |
+| [ #39](https://leetcode-cn.com/problems/combination-sum/)    | 组合总和                                    | M    |                                                              | 2020/12/03 | problems  |
+| [#29](https://leetcode-cn.com/problems/divide-two-integers/) | 两数相除                                    | M    |                                                              | 2020/12/03 | problems  |
+| [#30](https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/) | 串联所有单词的子串                          | H    |                                                              | 2020/12/03 | problems  |
+| [#59](https://leetcode-cn.com/problems/spiral-matrix-ii/)    | 螺旋矩阵 II                                 | M    |                                                              | 2020/12/03 | problems  |
+| [#659](https://leetcode-cn.com/problems/split-array-into-consecutive-subsequences/) | 分割数组为连续子序列                        | M    |                                                              | 2020/12/04 | **Daily** |
+| [#86](https://leetcode-cn.com/problems/partition-list/)      | 分隔链表                                    | M    |                                                              | 2020/12/04 | problems  |
+| [#79](https://leetcode-cn.com/problems/word-search/)         | 单词搜索                                    | M    |                                                              | 2020/12/04 | problems  |
+| [#74](https://leetcode-cn.com/problems/search-a-2d-matrix/)  | 搜索二维矩阵                                | M    |                                                              | 2020/12/04 | problems  |
+| [#92](https://leetcode-cn.com/problems/reverse-linked-list-ii/) | 反转链表 II                                 | M    |                                                              | 2020/12/04 | problems  |
+| [#41](https://leetcode-cn.com/problems/first-missing-positive/) | 缺失的第一个正数                            | H    |                                                              | 2020/12/04 | problems  |
+| [#78](https://leetcode-cn.com/problems/subsets/)             | 子集                                        | M    |                                                              | 2020/12/04 | problems  |
+| [#621](https://leetcode-cn.com/problems/task-scheduler/)     | 任务调度器                                  | M    |                                                              | 2020/12/05 | **Daily** |
+| [#917](https://leetcode-cn.com/problems/reverse-only-letters/) | 仅仅反转字母                                | S    |                                                              | 2020/12/05 | problems  |
+| [#812](https://leetcode-cn.com/problems/largest-triangle-area/) | 最大三角形面积                              | S    |                                                              | 2020/12/05 | problems  |
+| [#896](https://leetcode-cn.com/problems/monotonic-array/)    | 单调数列                                    | S    |                                                              | 2020/12/05 | problems  |
+| [#118](https://leetcode-cn.com/problems/pascals-triangle/)   | 杨辉三角                                    | S    |                                                              | 2020/12/06 | **Daily** |
+| [#861](https://leetcode-cn.com/problems/score-after-flipping-matrix/) | 翻转矩阵后的得分                            | M    |                                                              | 2020/12/07 | **Daily** |
+| [#1678](https://leetcode-cn.com/problems/goal-parser-interpretation/) | 设计 Goal 解析器                            | S    |                                                              | 2020/12/07 | problems  |
+| [#1679](https://leetcode-cn.com/problems/max-number-of-k-sum-pairs/) | K 和数对的最大数目                          | M    |                                                              | 2020/12/07 | problems  |
+| [ #1680](https://leetcode-cn.com/problems/concatenation-of-consecutive-binary-numbers/) | 连接连续二进制数字                          | M    |                                                              | 2020/12/07 | problems  |
+| [#1331](https://leetcode-cn.com/problems/rank-transform-of-an-array/) | 数组序号转换                                | S    |                                                              |            |           |
+| [#842](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence/) | 将数组拆分成斐波那契序列                    | M    | 回溯 + 剪枝                                                  | 2020/12/08 | **Daily** |
+| [#189](https://leetcode-cn.com/problems/rotate-array/)       | 旋转数组                                    | M    |                                                              | 2020/12/08 | problems  |
+| [#179](https://leetcode-cn.com/problems/largest-number/)     | 最大数                                      | M    |                                                              | 2020/12/08 | problems  |
+| [#91](https://leetcode-cn.com/problems/decode-ways/)         | 解码方法                                    | M    |                                                              | 2020/12/08 | problems  |
+| [#1217](https://leetcode-cn.com/problems/minimum-cost-to-move-chips-to-the-same-position/) | 玩筹码                                      | S    |                                                              | 2020/12/08 | problems  |
+| [ #62](https://leetcode-cn.com/problems/unique-paths/)       | 不同路径                                    | M    | 动态规划                                                     | 2020/12/09 | **Daily** |
+| [#962](https://leetcode-cn.com/problems/maximum-width-ramp/) | 最大宽度坡                                  | M    | 维护一个最大值的数组（暴力优化）                             | 2020/12/09 | problems  |
+| [#48](https://leetcode-cn.com/problems/rotate-image/)        | 旋转图像                                    | M    | 二维矩阵遍历（原地旋转）                                     | 2020/12/09 | problems  |
+| [ #1162](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | 地图分析                                    | M    | 多源BFS（==Dijkstra求多源最短路径==）                        | 2020/12/09 | problems  |
+| [#1594](https://leetcode-cn.com/problems/maximum-non-negative-product-in-a-matrix/) | 矩阵的最大非负积                            | M    | 动态规划（双路）                                             | 2020/12/09 | 模拟面试  |
+| [#1275](https://leetcode-cn.com/problems/find-winner-on-a-tic-tac-toe-game/) | 找出井字棋的获胜者                          | S    |                                                              | 2020/12/09 | 模拟面试  |
+| [#51](https://leetcode-cn.com/problems/n-queens/)            | N 皇后                                      | H    | 回溯（第 i 个皇后放在第 i 行）                               | 2020/12/09 | problems  |
+| [#52](https://leetcode-cn.com/problems/n-queens-ii/)         | N皇后 II                                    | H    | 回溯                                                         | 2020/12/09 | problems  |
+|                                                              |                                             |      |                                                              | 2020/12/10 | **Daily** |
+|                                                              |                                             | S    |                                                              | 2020/12/10 | problems  |
+|                                                              |                                             | M    |                                                              | 2020/12/10 | problems  |
+|                                                              |                                             | S    |                                                              | 2020/12/10 | problems  |
+|                                                              |                                             | M    |                                                              | 2020/12/10 | problems  |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
+|                                                              |                                             |      |                                                              |            |           |
 
 
 
